@@ -1,4 +1,10 @@
-#map { height: 85vh; }
+#map { 
+    height: 100%;
+height: -moz-available;          /* WebKit-based browsers will ignore this. */
+height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+height: fill-available;
+
+}
 header{
     padding: 15px;
     background: #3cd13c;
@@ -28,7 +34,7 @@ body{
     height: 100vh;
 }
 footer{
-    position: absolute;
+    position: fixed;
     height: 80px;
     width: 100vw;
     bottom: 0;
@@ -36,6 +42,7 @@ footer{
 }
 .iconemenuprincipal{
     font-size: 2.2em;
+    text-align: center;
     margin: 22px auto;
     display: block;
     width: fit-content;
