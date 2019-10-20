@@ -12,12 +12,13 @@ a{
 }
 .containerinfousuario{
     height: 100px;
-    border: 1px solid black;
+    border: 2px solid rgba(64, 211, 64, 0.45);
     margin: 15px 0;
     border-radius: 15px;
+    background: rgba(255, 255, 255, 0.66);
 }
 .espacador1{
-    height: 80px;
+    height: 130px;
 }
 .textinfousuario{
     margin: 0;
@@ -32,15 +33,11 @@ a{
     width:80px;
     display: block;
     margin: auto;
+    background: rgba(32, 221, 32, 0.45);
 }
 .containerdata{
     border-top: 1px solid black; 
     border-bottom: 1px solid black; 
     width: 100%;
     
-}
-#co2icone{
-    border: 2px solid;
-    border-radius: 500px;
-    padding: 15px 5px;
 }

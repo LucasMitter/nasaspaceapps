@@ -45,6 +45,10 @@ header {
 body {
     position: relative;
     height: 100vh;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
@@ -52,7 +56,7 @@ footer {
     height: 80px;
     width: 100vw;
     bottom: 0;
-    background: white;
+    background: #eee;
 }
 
 .iconemenuprincipal {
@@ -61,7 +65,7 @@ footer {
     margin: 22px auto;
     display: block;
     width: fit-content;
-    color: #222;
+    color: #8181d3;
 }
 
 .iconemenuprincipal.active {

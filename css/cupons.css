@@ -2,13 +2,17 @@ header{
     background: #eee;
 }
 .espacador1{
-    height: 130px;
+    height: 150px;
 }
 
 .containerinfocupons{
     border: 1px solid black;
     margin: 15px 0;
     border-radius: 15px;
+    
+    
+    border: 2px solid rgba(64, 211, 64, 0.45);
+    background: rgba(255, 255, 255, 0.79);
 }
 .textinfocupons{
     margin: 0;
@@ -40,6 +44,6 @@ header{
     text-align: center;
     
 }
-.orange{
+.green{
     color: #3cd13c;
 }
