@@ -6,6 +6,8 @@ height: fill-available;
 
 }
 header{
+    position: fixed;
+    top: 0;
     padding: 15px;
     background: #3cd13c;
 }
