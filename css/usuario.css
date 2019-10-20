@@ -1,0 +1,46 @@
+header{
+    background: #eee;
+}
+a{
+    color: black;
+    font-weight: bold;
+}
+.iconemenuusuario{
+    font-size: 3em;
+    width: fit-content;
+    color: #222;
+}
+.containerinfousuario{
+    height: 100px;
+    border: 1px solid black;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+.espacador1{
+    height: 80px;
+}
+.textinfousuario{
+    margin: 0;
+    font-size: 1.5em;
+}
+.imginfousuario{
+    border: 2px solid;
+    border-radius: 500px;
+    padding: 15px 5px;
+    font-size: 3em;
+    text-align: center;
+    width:80px;
+    display: block;
+    margin: auto;
+}
+.containerdata{
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+    width: 100%;
+    
+}
+#co2icone{
+    border: 2px solid;
+    border-radius: 500px;
+    padding: 15px 5px;
+}

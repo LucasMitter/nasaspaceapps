@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMobil - Ganhe benefícios salvando o planeta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mapa.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="containercampobusca mx-auto">
+            <input id="campobusca" type="text" placeholder="Para onde você quer ir?">
+            <a href="javascript:buscar()">
+                <!--<img class="btnbuscar" src="../img/buscar.jfif">--> <i class="fa fa-search btnbuscar"></i></a>
+        </div>
+    </header>
+    <div style="background: gray" id="map"></div>
+    
+    <footer class="container-fluid p-0">
+        <div class="row my-0 mx-auto maxw-600">
+            <div class="col-4">
+                <a href="usuario/"><i class="fa fa-user iconemenuprincipal"></i></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-map iconemenuprincipal active"></i></a>
+            </div>
+            <div class="col-4">
+                <a href="cupons/"><i class="fa fa-usd iconemenuprincipal"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+    <script src="js/mapa.js"></script>
+</body>
+
+</html>

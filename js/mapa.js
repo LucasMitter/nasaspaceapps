@@ -61,4 +61,12 @@ function setMarkers() {
 function buscar(){
     var stringbusca = document.getElementById("campobusca").nodeValue;
     
+    // no need to pass map or results div since
+// we are only interested in travel time.
+/*var directions = new GDirections (); 
+    var wp = new Array ();
+wp[0] = new GLatLng(32.742149,119.337218);
+wp[1] = new GLatLng(32.735347,119.328485);
+directions.loadFromWaypoints(wp);*/
+    
 }
