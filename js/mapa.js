@@ -2,26 +2,26 @@ var map;
 // Initialize and add the map
 function initMap() {
     // The location of campinas
-    var campinas = {
-        lat: -22.8723,
-        lng: -47.044
+    var localinicio = {
+        lat: -23.540787, 
+        lng: -46.734394
     };
     // The map, centered at campinas
     map = new google.maps.Map(
         document.getElementById('map'), {
             zoom: 15,
-            center: campinas
+            center: localinicio
         });
     // Set the markers
     setMarkers();
 }
 // Data for the markers consisting of a name, a LatLng and order
 var marcas = [
-            ['Kartodromo', -22.8782, -47.0620, 1],
-            ['Praça Arautos', -22.8741, -47.0431, 4],
-            ['Lago do Café', -22.8709, -47.0479, 3],
-            ['Locomotiva', -22.8755, -47.0489, 5],
-            ['Portao2', -22.873, -47.058, 2]
+            ['Metro Vila Lobos', -23.546003, -46.732764, 1],
+            ['Mc Donalds', -23.5345029,-46.7335499, 2],
+            ['NASA Space Apps', -23.5406247,-46.7341621, 3],
+            ['Shopping Vila Lobos', -23.5510944,-46.7219555, 4],
+            ['Leroy Merlin', -23.5459046,-46.7368972, 5]
         ];
 
 function setMarkers() {
