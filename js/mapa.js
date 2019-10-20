@@ -1,12 +1,12 @@
 var map;
 // Initialize and add the map
 function initMap() {
-    // The location of campinas
+    // The location of state
     var localinicio = {
-        lat: -23.540787, 
-        lng: -46.734394
+        lat: -23.5354545, 
+        lng: -46.7350709
     };
-    // The map, centered at campinas
+    // The map, centered at state
     map = new google.maps.Map(
         document.getElementById('map'), {
             zoom: 15,
@@ -14,7 +14,10 @@ function initMap() {
         });
     // Set the markers
     setMarkers();
+    directionsDisplay.setMap(map);
+   calcRoute(map);
 }
+
 // Data for the markers consisting of a name, a LatLng and order
 var marcas = [
             ['Metro Vila Lobos', -23.546003, -46.732764, 1],
@@ -62,3 +65,23 @@ function buscar(){
     var stringbusca = document.getElementById("campobusca").nodeValue;
     
 }
+
+function calcRoute(map) {
+  var start = new google.maps.LatLng(41.850033, -87.6500523);
+  var end = new google.maps.LatLng(37.3229978, -122.0321823);
+  var request = {
+    origin: start,
+    destination: end,
+    travelMode: 'WALKING'
+  };
+
+  directionsService.route(request, function(response, status) {
+    if (status == 'OK') {
+      directionsDisplay.setDirections(response);
+    } else {
+      alert("directions request failed, status=" + status)
+    }
+  });
+}
+google.maps.event.addDomListener(window, "load", initMap);
+
